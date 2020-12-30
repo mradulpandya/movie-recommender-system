@@ -1,0 +1,2 @@
+# movie-recommender-system
+Recommendation system produces a rank list on which a user might be interested, in the context of his current choice of an item. Subclass of information filtering system that seek to predict the rating or preference that a user would give to them, helps deciding what to watch. Applied in variety of application like books, research article. Recommendation system mainly has two items elements item and user. 
