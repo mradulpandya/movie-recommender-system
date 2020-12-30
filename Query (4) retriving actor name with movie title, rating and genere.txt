@@ -1,0 +1,1 @@
+MATCH (actor:Person)-[:ACTED_IN]-(film:Movie) WHERE actor.name='Ajay Devgan' RETURN actor.name, film.title,film.genere,film.Rating ;

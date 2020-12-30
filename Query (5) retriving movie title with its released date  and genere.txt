@@ -1,0 +1,1 @@
+MATCH (films:Movie)RETURN films.title,films.released,films.genere;

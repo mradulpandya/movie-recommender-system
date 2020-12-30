@@ -1,0 +1,69 @@
+1st Movie. 
+CREATE(Golmaal:Movie {title:'Golmaal Fun Unlimited', released:2006, Rating:4, genere:'Comedy'})
+CREATE(Ajay:Person {name:'Ajay Devgan’}) 
+CREATE(Arshad:Person {name:'Arshad Warsi’}) 
+CREATE(Sharman:Person {name:'Sharman Joshi’})
+ CREATE(Tusshar:Person {name:'Tushar Kapoor’})
+ CREATE(Rohit:Person {name:'Rohit Shetty’}) 
+CREATE(Dhiillin:Person {name:'Dhiillin'}) CREATE
+    (Ajay)-[:ACTED_IN {roles:['Gopal']}]->(Golmaal),
+    (Arshad)-[:ACTED_IN {roles:['Madhav']}]->(Golmaal),
+    (Sharman)-[:ACTED_IN {roles:['Laxman']}]->(Golmaal),
+    (Tusshar)-[:ACTED_IN {roles:['Lucky']}]->(Golmaal), (Rohit)-[:DIRECTED]->(Golmaal),
+      (Dhiillin)-[:PRODUCED]->(Golmaal)
+
+2nd Movie.
+CREATE(Kuchkuchhotahain:Movie {title:'Kuch Kuch Hota Hain', released:1998, Rating:4, genere:'Romantic’})
+CREATE(Srk:Person {name:'Shah Rukh Khan’}) 
+CREATE(Kajol:Person {name:'Kajol’})
+CREATE(Rani:Person {name:'Rani Mukharji’}) 
+CREATE(Karan:Person {name:'Karan Johar’}) 
+CREATE(Yash:Person {name:'Yash Johar’})
+ CREATE
+       (Srk)-[:ACTED_IN {roles:['Rahul']}]->(Kuchkuchhotahain), 
+       (Kajol)-[:ACTED_IN {roles:['Anjali']}]->(Kuchkuchhotahain), 
+      (Rani)-[:ACTED_IN {roles:['Tina']}]->(Kuchkuchhotahain), 
+     (Karan)-[:DIRECTED]->(Kuchkuchhotahain),
+     (Yash)-[:PRODUCED]->(Kuchkuchhotahain)
+
+3rd Movie.
+CREATE(War:Movie {title:'War', released:2019, Rating:4, genere:'Action’}) 
+CREATE(Hrithik:Person {name:'Hrithik Roshan'})
+CREATE(Tiger:Person {name:'Tiger Shroff’}) 
+CREATE(Vaani:Person {name:'Vaani Kapoor’}) 
+CREATE(Siddharth:Person {name:'Siddharth Anand’}) 
+CREATE(Adityac:Person {name:'Aditya Chopra’}) 
+CREATE
+	(Hrithik)-[:ACTED_IN {roles:['Kabir']}]->(War),
+	(Tiger)-[:ACTED_IN {roles:['Khalid']}]->(War),
+	(Vaani)-[:ACTED_IN {roles:['Naina']}]->(War), 
+	(Siddharth)-[:DIRECTED]->(War),
+	(Adityac)-[:PRODUCED]->(War)
+
+4th Movie.
+CREATE(Badla:Movie {title:"Badla", released:2019, Rating:3, genere:'Thriller’}) 
+CREATE(Amitabh:Person {name:'Amitabh Bachchan’}) 
+CREATE(Taapsee:Person {name:'Taapsee Pannu'})
+CREATE(Sujoy:Person {name:'Sujoy Ghosh’}) 
+CREATE(Gauri:Person {name:'Gauri Khan’}) 
+CREATE
+	(Amitabh)-[:ACTED_IN {roles:['Badal Gupta']}]->(Badla),
+	(Taapsee)-[:ACTED_IN {roles:['Naina Sethi']}]->(Badla),
+	 (Sujoy)-[:DIRECTED]->(Badla),
+	(Gauri)-[:PRODUCED]->(Badla)
+
+5th Movie.
+CREATE(Bhoot:Movie {title:"Bhoot", released:2020, Rating:3, genere:'Horror’}) 
+CREATE(Vicky:Person {name:'Vicky Kaushal'})
+CREATE(Bhumi:Person {name:'Bhumi Pednekar’}) 
+CREATE(Bhanu:Person {name:'Bhanu Pratap Singh’}) 
+CREATE(Shashank:Person {name:'Shashank Khaitan’}) 
+CREATE
+	(Vicky)-[:ACTED_IN {roles:['Prithvi']}]->(Bhoot),
+	(Bhumi)-[:ACTED_IN {roles:['Sapna']}]->(Bhoot),
+	(Bhanu)-[:DIRECTED]->(Bhoot),
+	(Shashank)-[:PRODUCED]->(Bhoot)
+
+
+
+

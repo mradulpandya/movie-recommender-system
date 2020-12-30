@@ -1,0 +1,1 @@
+MATCH (actor:Person)-[:ACTED_IN]-(film:Movie), (director:Person)- [:DIRECTED]-(film:Movie)WHERE actor.name='Akshay Kumar' RETURN actor.name, film.title, director.name, film.Rating ;
